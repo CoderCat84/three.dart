@@ -30,17 +30,17 @@ class ShadowCaster extends Light {
 
     //
 
-    shadowCameraNear = 50,
-    shadowCameraFar = 5000,
-    shadowCameraFov = 50,
+    shadowCameraNear = 50.0,
+    shadowCameraFar = 5000.0,
+    shadowCameraFov = 50.0,
 
     shadowCameraVisible = false,
 
     shadowBias = 0,
     shadowDarkness = 0.5,
 
-    shadowMapWidth = 512,
-    shadowMapHeight = 512,
+    shadowMapWidth = 512.0,
+    shadowMapHeight = 512.0,
 
     //
 
