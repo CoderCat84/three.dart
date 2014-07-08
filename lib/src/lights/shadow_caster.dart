@@ -4,7 +4,7 @@ class ShadowCaster extends Light {
   bool castShadow;
   bool onlyShadow;
 
-  num shadowCameraNear,
+  double shadowCameraNear,
       shadowCameraFar,
       shadowCameraFov;
 
