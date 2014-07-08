@@ -39,8 +39,8 @@ class ShadowCaster extends Light {
     shadowBias = 0,
     shadowDarkness = 0.5,
 
-    shadowMapWidth = 512.0,
-    shadowMapHeight = 512.0,
+    shadowMapWidth = 512,
+    shadowMapHeight = 512,
 
     //
 
