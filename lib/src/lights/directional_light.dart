@@ -35,10 +35,10 @@ class DirectionalLight extends ShadowCaster {
     position = new Vector3( 0.0, 1.0, 0.0 );
     target = new Object3D();
 
-    shadowCameraLeft = -500;
-    shadowCameraRight = 500;
-    shadowCameraTop = 500;
-    shadowCameraBottom = -500;
+    shadowCameraLeft = -500.0;
+    shadowCameraRight = 500.0;
+    shadowCameraTop = 500.0;
+    shadowCameraBottom = -500.0;
 
     //
 
