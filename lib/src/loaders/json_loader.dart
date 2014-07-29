@@ -109,7 +109,8 @@ class JSONLoader extends Loader {
   }
 
   _parseModel( Map json, Geometry geometry, num scale ) {
-
+    double u, v;
+    
     var i, j, fi,
 
     offset, zLength, nVertices,
@@ -125,7 +126,7 @@ class JSONLoader extends Loader {
 
     vertex, face, color, normal,
 
-    uvLayer, uvs, u, v,
+    uvLayer, uvs,
 
     faces = json["faces"],
     vertices = json["vertices"],
