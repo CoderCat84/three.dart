@@ -164,7 +164,7 @@ class Loader {
     // TODO(nelsonsilva) - do whe need this?
     // result.sourceFile = sourceFile;
 
-    if( repeat ) {
+    if( repeat!= null && repeat == true ) {
 
       result.repeat.setValues( repeat[ 0 ], repeat[ 1 ] );
 
