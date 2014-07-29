@@ -269,9 +269,9 @@ class JSONLoader extends Loader {
 
         normal = new Vector3.zero();
 
-        normal.x = normals[ normalIndex ++ ];
-        normal.y = normals[ normalIndex ++ ];
-        normal.z = normals[ normalIndex ];
+        normal.x = (double) normals[ normalIndex ++ ];
+        normal.y = (double) normals[ normalIndex ++ ];
+        normal.z = (double) normals[ normalIndex ];
 
         face.normal = normal;
 
