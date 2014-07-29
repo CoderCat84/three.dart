@@ -1010,12 +1010,12 @@ class WebGLRenderer implements Renderer {
 
 	}
 
-	bufferGuessVertexColorType ( material ) {
+	bool bufferGuessVertexColorType ( material ) {
 
 		if ( ((material.vertexColors is bool) && material.vertexColors) ||
 		     ((material.vertexColors is int) && (material.vertexColors != NoColors))) {
 
-			return material.vertexColors;
+			return true;
 
 		}
 
@@ -1755,7 +1755,7 @@ class WebGLRenderer implements Renderer {
 		}
 
 		var normalType = bufferGuessNormalType( material ),
-		vertexColorType = bufferGuessVertexColorType( material ),
+		bool vertexColorType = bufferGuessVertexColorType( material ),
 		uvType = bufferGuessUVType( material ),
 
 		needsSmoothNormals = ( normalType == SmoothShading );
@@ -2207,7 +2207,7 @@ class WebGLRenderer implements Renderer {
 				vertexColors = face.vertexColors;
 				faceColor = face.color;
 
-				if ( vertexColors.length == 3 && vertexColorType == VertexColors ) {
+				if ( vertexColors.length == 3 && material.vertexColorType == VertexColors ) {
 
 					c1 = vertexColors[ 0 ];
 					c2 = vertexColors[ 1 ];
@@ -2245,7 +2245,7 @@ class WebGLRenderer implements Renderer {
 				vertexColors = face.vertexColors;
 				faceColor = face.color;
 
-				if ( vertexColors.length == 4 && vertexColorType == VertexColors ) {
+				if ( vertexColors.length == 4 && material.vertexColorType == VertexColors ) {
 
 					c1 = vertexColors[ 0 ];
 					c2 = vertexColors[ 1 ];
