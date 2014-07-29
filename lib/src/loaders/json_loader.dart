@@ -250,8 +250,8 @@ class JSONLoader extends Loader {
 
             uvIndex = faces[ offset ++ ];
 
-            u = uvLayer[ uvIndex * 2 ];
-            v = uvLayer[ uvIndex * 2 + 1 ];
+            u = uvLayer[ uvIndex * 2 ].toDouble();
+            v = uvLayer[ uvIndex * 2 + 1 ].toDouble();
 
             uvs[ j ] = new UV( u, v );
 
@@ -285,9 +285,9 @@ class JSONLoader extends Loader {
 
           normal = new Vector3.zero();
 
-          normal.x = normals[ normalIndex ++ ];
-          normal.y = normals[ normalIndex ++ ];
-          normal.z = normals[ normalIndex ];
+          normal.x = normals[ normalIndex ++ ].toDouble();
+          normal.y = normals[ normalIndex ++ ].toDouble();
+          normal.z = normals[ normalIndex ].toDouble();
 
           face.vertexNormals.add( normal );
 
