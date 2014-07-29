@@ -1758,7 +1758,7 @@ class WebGLRenderer implements Renderer {
 		bool vertexColorType = bufferGuessVertexColorType( material );
 		bool uvType = bufferGuessUVType( material );
 
-		needsSmoothNormals = ( normalType == SmoothShading );
+		bool needsSmoothNormals = ( normalType == SmoothShading );
 
 		var f, fl, fi, face,
 		vertexNormals, faceNormal, normal,
