@@ -164,15 +164,15 @@ class Loader {
     // TODO(nelsonsilva) - do whe need this?
     // result.sourceFile = sourceFile;
 
-    if( repeat == null ) {} else {
+    //if( repeat == null ) {} else {
 
-      if (repeat == true) {
+      //if (repeat == true) {
         result.repeat.setValues( repeat[ 0 ], repeat[ 1 ] );
 
         if ( repeat[ 0 ] != 1 ) result.wrapS = RepeatWrapping;
         if ( repeat[ 1 ] != 1 ) result.wrapT = RepeatWrapping;
-      }
-    }
+      //}
+    //}
 
     if ( offset ) {
 
